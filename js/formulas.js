@@ -14,10 +14,9 @@ containerSelect.addEventListener('click', e=>{
 cuadro.addEventListener('click', e=>{
     runCalculator += 1
     if(runCalculator === 1){
-        containerSelect.classList.toggle('active')
-        selectbox.classList.toggle('selectbox_1')
         const main = document.getElementById('main')
         main.classList.add('calculatorRun')
-        console.log('hola')
+    } else{
+        
     }
 })
