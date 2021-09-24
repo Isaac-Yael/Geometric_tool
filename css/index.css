@@ -177,7 +177,7 @@ h1{
     color: #fff;
 }
 .blur_aqua_green{
-    position: absolute;
+    position: fixed;
     top: -20%;
     left: -5%;
     height: 110vh;
@@ -185,38 +185,10 @@ h1{
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 188, 215, 0.14) 0%, rgba(0, 188, 215, 0) 100%);
 }
 .blur_purple{
-    position: absolute;
+    position: fixed;
     bottom: -20%;
     right: -5%;
     height: 110vh;
     width: 110vh;
     background: radial-gradient(50% 50% at 50% 50%, rgba(142, 56, 154, 0.15) 0%, rgba(142, 56, 154, 0) 100%);
-}
-
-@media (max-width: 700px){
-    html{
-        overflow: hidden;
-    }
-    h1{
-        font-size: 3.6rem;
-    }
-    .h1_span{
-        font-size: 2.6rem;
-    }
-    .blur_aqua_green{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vw;
-        width: 100vw;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 188, 215, 0.14) 0%, rgba(0, 188, 215, 0) 100%);
-    }
-    .blur_purple{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 100vw;
-        width: 100vw;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(142, 56, 154, 0.15) 0%, rgba(142, 56, 154, 0) 100%);
-    }
 }
