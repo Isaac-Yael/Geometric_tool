@@ -21,6 +21,16 @@ cuadro.addEventListener('click', e=>{
     }
 })
 
+circulo.addEventListener('click', e=>{
+    runCalculator += 1;
+    if(runCalculator === 1){
+        const main = document.getElementById('main')
+        main.classList.add('calculatorRun')
+        const figuresContainer = document.querySelector('.figures_container')
+        figuresContainer.style.left = "-100%"
+    }
+})
+
 // Función para calcular el cuadrado
 
 perimetroCuadrado = (lado) => lado * 4
