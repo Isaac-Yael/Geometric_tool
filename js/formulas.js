@@ -20,3 +20,24 @@ cuadro.addEventListener('click', e=>{
         
     }
 })
+
+// Función para calcular el cuadrado
+
+perimetroCuadrado = (lado) => lado * 4
+areaCuadrada = (lado) => lado * lado
+function calcularAyPCuadrado(){
+    const input = document.getElementById('inputCuadrado').value
+    const perimetro = perimetroCuadrado(input);
+    const perimetroSpan = document.getElementById('perimetro_cuadro')
+    perimetroSpan.innerText = perimetro + " cm"
+
+    const area = areaCuadrada(input);
+    const areaSpan = document.getElementById('area_cuadrado')
+    areaSpan.innerText = area + " cm"
+}
+// function calcularAreaCuadrado(){
+//     const input = document.getElementById('inputCuadrado').value    
+//     const area = areaCuadrada(input);
+//     const areaSpan = document.getElementById('area_cuadrado')
+//     areaSpan.innerText = area
+// }

@@ -29,6 +29,9 @@
                 <div class="selectbox_div" id="cuadro">
                     <h3>Cuadrado</h3>
                 </div>
+                <div class="selectbox_div" id="rectangulo">
+                    <h3>Rectángulo</h3>
+                </div>
                 <div class="selectbox_div" id="circulo">
                     <h3>Círculo</h3>
                 </div>
@@ -38,6 +41,18 @@
                 <div class="selectbox_div" id="trianguloIsoseles">
                     <h3>Triángulo Isóseles</h3>
                 </div>
+                <div class="selectbox_div" id="pentagono">
+                    <h3>Pentágono</h3>
+                </div>
+                <div class="selectbox_div" id="cubo">
+                    <h3>Cubo</h3>
+                </div>
+                <div class="selectbox_div" id="cilindro">
+                    <h3>Cilindro</h3>
+                </div>
+                <div class="selectbox_div" id="esfera">
+                    <h3>Esfera</h3>
+                </div>
             </div>
         </div>
     </main>
@@ -45,25 +60,75 @@
         <div class="cuadro">
             <div class="cuadro_div">
                 <h4>Cuadrado</h4>
-                <p class="figures_p">Ingresa los lados de tu cuadrado y presiona en "calcular"</p>
+                <p class="figures_p">Ingresa la medida de un lado de tu cuadrado y presiona en "calcular".</p>
                 <form action="">
                     <label for="inputCuadrado">Lado</label>
                     <input type="number" id="inputCuadrado">
-                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()">Calcaular Área</button>
+                    <button type="button" onclick="calcularAyPCuadrado()">Calcular</button>
                 </form>
             </div>
             <div class="img">
-                <img src="" alt="">
-                <div class="medidas">
-                    <p>Perímetro: <span></span></p>
-                    <p>Área: <span></span></p>
+                <div class="img_cuadrado"></div>
+                <div class="img_medidas">
+                    <p>Perímetro: <span id="perimetro_cuadro"></span></p>
+                    <p>Área: <span id="area_cuadrado"></span></p>
                 </div>
             </div>
         </div>
-        <div class="Cuadrado"></div>
-        <div class="Triangulo"></div>
-        <div class="triangulo_isoseles"></div>
+        <div class="cuadro">
+            <div class="cuadro_div">
+                <h4>Círculo</h4>
+                <p class="figures_p">Ingresa la medida de un lado de tu cuadrado y presiona en "calcular".</p>
+                <form action="">
+                    <label for="inputCuadrado">Lado</label>
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularAyPCuadrado()">Calcular</button>
+                </form>
+            </div>
+            <div class="img">
+                <div class="img_cuadrado"></div>
+                <div class="img_medidas">
+                    <p>Perímetro: <span id="perimetro_cuadro"></span></p>
+                    <p>Área: <span id="area_cuadrado"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro">
+            <div class="cuadro_div">
+                <h4>Triángulo</h4>
+                <p class="figures_p">Ingresa la medida de un lado de tu cuadrado y presiona en "calcular".</p>
+                <form action="">
+                    <label for="inputCuadrado">Lado</label>
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularAyPCuadrado()">Calcular</button>
+                </form>
+            </div>
+            <div class="img">
+                <div class="img_cuadrado"></div>
+                <div class="img_medidas">
+                    <p>Perímetro: <span id="perimetro_cuadro"></span></p>
+                    <p>Área: <span id="area_cuadrado"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="cuadro">
+            <div class="cuadro_div">
+                <h4>Triángulo Isosceles</h4>
+                <p class="figures_p">Ingresa la medida de un lado de tu cuadrado y presiona en "calcular".</p>
+                <form action="">
+                    <label for="inputCuadrado">Lado</label>
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularAyPCuadrado()">Calcular</button>
+                </form>
+            </div>
+            <div class="img">
+                <div class="img_cuadrado"></div>
+                <div class="img_medidas">
+                    <p>Perímetro: <span id="perimetro_cuadro"></span></p>
+                    <p>Área: <span id="area_cuadrado"></span></p>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="./js/formulas.js"></script>
 </body>
