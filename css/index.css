@@ -16,11 +16,18 @@ body{
     background-color: var(--background_dark_mood);
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 1;
+    padding-bottom: 20px;
 }
-a{
-    text-decoration: none;
+body::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--celeste);
+
 }
 header{
     position: fixed;
@@ -67,6 +74,7 @@ main{
 .calculatorRun{
     height: 30vh;
     padding: 0 0 0 0;
+    margin-bottom: 20px;
 }
 h1{
     color: var(--celeste);
@@ -199,13 +207,19 @@ h1{
 /* Figuras */
 
 .figures{
-    width: 40vw;
+    width: 50vw;
+    min-width: 850px;
     display: flex;
-    align-items: center;
     z-index: 80;
-    overflow-x: scroll;
+    overflow-x: hidden;
     position: relative;
     margin: auto;
+}
+.figures_div_all{
+    position: relative;
+    display: flex;
+    width: 100%;
+    transition: .8s ease-in-out;
 }
 .figures_p{
     color: #fff;
@@ -220,7 +234,6 @@ h1{
     backdrop-filter: blur(6px);
     box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.25);
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     padding: 40px 40px;
 }
@@ -239,6 +252,7 @@ h1{
     min-width: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .figures_container .figures_container_div h4{
     color: var(--aqua_green);
@@ -291,6 +305,7 @@ h1{
 }
 .img{
     width: 50%;
+    min-width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -318,4 +333,71 @@ h1{
 .img_medidas span{
     opacity: 80%;
     font-weight: 400;
+}
+
+@media  (max-width: 900px) {
+    h1{
+        font-size: 3.4rem;
+        text-align: center;
+    }
+    .h1_span{
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    .figures{
+        width: 80vw;
+        min-width: 350px;
+        overflow-x: hidden;
+        margin: auto;
+    }
+    .figures_div_all{
+        display: flex;
+        width: 100%;
+        transition: .8s ease-in-out;
+    }
+    .figures .figures_container{
+        min-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .figures_container .figures_container_div{
+        height: 100%;
+        width: 80%;
+        min-width: 250px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 80%;
+        min-width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .figures_p{
+        text-align: center;
+    }
+    .figures_container .figures_container_div form input{
+        padding: 10px 12px;
+        width: 90%;
+        margin-bottom: 18px;
+    }
+    .figures_container .figures_container_div form button{
+        width: 80%;
+        min-width: 200px;
+    }
+    .figures_container .figures_container_div form{
+        width: 90%;
+        align-items: center;
+    }
+    .figures_container .figures_container_div form label{
+        margin: 14px 0;
+        color: rgba(255, 255, 255, 0.671);
+        font-size: 1.6rem;
+        width: 90%;
+    }
 }
